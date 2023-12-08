@@ -22,7 +22,7 @@ body {
 }
 
 body,input {
-	font-family: 'Ubuntu Condensed', serif;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 br.clearfix {
@@ -65,13 +65,25 @@ h4 {
 	font-size: 1.25em;
 }
 
-img.alignleft {
-	margin: 5px 20px 20px 0;
+
+.content {
+	width: 420px;
+	padding: 0;
 	float: left;
 }
 
-img.aligntop {
-	margin: 5px 0 20px 0;
+        .image-container {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .large-image {
+            width: 66.66%; /* Two thirds of the right side */
+            max-width: 600px; /* Adjust the fixed size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
 }
 
 p {
@@ -91,11 +103,7 @@ ul h4 {
 	overflow: hidden;
 }
 
-#content {
-	width: 420px;
-	padding: 0;
-	float: left;
-}
+
 
 #footer {
 	padding: 0 0 90px 0;
@@ -234,15 +242,35 @@ ul h4 {
   <div id="wrapper">
      <div id="header">
 	<div id="logo">
-	<h1>Francis Szetela</h1>
+	<h1><a href="index.html">Francis Szetela</a></h1>
 	</div>
 	 <div id="menu">
 		<ul>
 		  <li><a href="index.html">Homepage</a></li>
 		  <li><a href="portfolio/portfoliomain.html">Portfolio</a></li>
 		  <li><a href="#">Resume</a></li>
+		  <li class="first current_page_item"><a>About Me</a></li>
 		  <li class="last"><a href="#">Contact</a></li>
 		</ul>
 	<br class="clearfix" />
 	</div>
      </div>
+ <div id="page">
+	<div class="content">
+	  <div class="box">
+	     <h2>Hello, my name is Francis Szetela :)</h2>
+	    <p>I am a student journalist living in the Lower Duwamish Valley in South Seattle.</p>
+
+<p>Before the pandemic, I cooked professionally in restaurants. In 2013 I went to culinary school in New York City and spent some years in fine dining.</p>
+
+<p>I have a lifelong passion for wild foods, and in my twenties traveled extensively throughout the United States gathering and eating plants and fungi.</p>
+
+<p>I decided to go to cooking school in an effort to learn how to best honor these ingredients. Since then, I have become interested in the ethics, sustainability and cultural impacts of the recent “foraging” trend within the restaurant industry and beyond.</p>
+
+<p>From my experiences cooking and harvesting plants in both urban and rural settings, I like to write on food topics with a social and environmental justice lens.</p>
+
+<p>This blog contains some of my recent writings and projects from the journalism program at Colorado State University.</p>    
+	  </div>
+
+</body>
+</html>
